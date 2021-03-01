@@ -20,4 +20,4 @@ restore:
        url: 'https://3.14.145.155/wp-content/uploads/2021/03/masterdb.zip'
     user: postgres
     password: $POSTGRESQL_PASSWORD # password of the 'user' above.
-    token: 20210301-1320 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token: 20210301-1458 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
