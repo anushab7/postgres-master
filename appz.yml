@@ -1,7 +1,7 @@
 app:
     name: Postgres Master
     code: POSTGRES
-    notify: appzdev@cloudbourne.co
+    notify: aborra@ecloudcontrol.com
     
 build:
     version: 12.2
@@ -9,10 +9,9 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: postgres_master-12.2
-    image_name: alpha/postgres_master
     
 deploy:
-    context: alpha/DEV
+    context: anushab7/DEV
     type: statefulset
     replicas: 1
     port:
@@ -24,10 +23,7 @@ volumes:
     name: data
     size: 5Gi
     mode: ReadWriteOnce
-    class: microk8s-hostpath   
-    
-monitor:
-    notify: appzops@cloudbourne.co      
+    class: microk8s-hostpath       
     
 properties:
     POSTGRESQL_REPLICATION_MODE: master
@@ -46,4 +42,4 @@ properties:
       vault: APPUSER_PASSWORD
     #APPZ_RESTORE_TOKEN: 20200810-1217
     #APPZ_LOAD_TOKEN: 20200810-1217
-    revision : 56
+    revision : 57
