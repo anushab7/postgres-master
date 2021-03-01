@@ -2,9 +2,8 @@ users:
   - name: springboot_web
     password: $POSTGRES_SPRINGBOOTWEB_PASSWORD
     role: superuser
-  
 databases:
-  - name: springboot-web
+  - name: springboot_web
     owner: springboot_web
     tablespace:
       - name: tb1
@@ -13,11 +12,10 @@ databases:
       - name: schema1
         authorised_user: springboot_web
         search_path: true
-      
 restore:
-  - database: springboot-web
+  - database: springboot_web
     source:
        url: 'https://3.14.145.155/wp-content/uploads/2021/03/masterdb.zip'
     user: postgres
     password: $POSTGRESQL_PASSWORD # password of the 'user' above.
-    token: 20210301-1520 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token: 20210301-1621 # The restore token to be validated before restoring
