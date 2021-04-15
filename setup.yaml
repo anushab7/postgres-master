@@ -6,8 +6,8 @@ databases:
   - name: springbootweb
     owner: springbootweb
     tablespace:
-      - name: tb2
-        location: /appz/data/tb2
+      - name: tb1
+        location: /appz/data/tb1
     schemas:
       - name: schema1
         authorised_user: springbootweb
@@ -18,4 +18,4 @@ restore:
     url: 'https://www.ecloudcontrol.com/wp-content/uploads/2021/03/accountsdb.zip'
     user: postgres
     password: $POSTGRESQL_PASSWORD  # password of the 'user' above.
-    token: 20210415-1435  # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
+    token: 20210415-1453  # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
