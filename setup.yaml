@@ -1,19 +1,19 @@
 users:
-  - name: springbootweb
+  - name: springboot-web
     password: $POSTGRESQL_SPRINGBOOTWEB_PASSWORD
     role: superuser
 databases:
-  - name: springbootweb
-    owner: springbootweb
+  - name: springboot-web
+    owner: springboot-web
     tablespace:
       - name: tb1
         location: /appz/data/tb1
     schemas:
       - name: schema1
-        authorised_user: springbootweb
+        authorised_user: springboot-web
         search_path: true
 restore:
-- database: springbootweb
+- database: springboot-web
   source:
     url: 'https://www.ecloudcontrol.com/wp-content/uploads/2021/03/accountsdb.zip'
   user: postgres
