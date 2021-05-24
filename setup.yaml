@@ -16,6 +16,6 @@ restore:
 - database: springboot-web
   source:
     url: 'https://www.ecloudcontrol.com/wp-content/uploads/2021/03/accountsdb.zip'
-  user: postgres
+  user: springboot-web
   password: $POSTGRESQL_SPRINGBOOTWEB_PASSWORD
-  token: 20210524-2146
+  token: 20210524-2159
